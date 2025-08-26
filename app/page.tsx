@@ -17,7 +17,7 @@ export default function WhatsAppRedirect() {
     const redirectTimer = setTimeout(() => {
       // Cambia este número por el tuyo
       const phoneNumber = process.env.NEXT_PUBLIC_API_NUMBER // Formato: código país + número sin espacios ni símbolos
-      const mensaje = encodeURIComponent('Hola\n');
+      const mensaje = encodeURIComponent('Hola, quiero registrarme en MoneyMaker con el codigo WIN001');
       const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${mensaje}`;
       window.location.href = url
     }, 2000)
